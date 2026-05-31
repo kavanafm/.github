@@ -27,13 +27,27 @@ We're opening to international engagements — radio stations, broadcast tech in
 
 [**wx.kavana.cn**](https://wx.kavana.cn) — Online studio where you describe the show you want and KAVANA produces a broadcast-grade segment in minutes. Voice, packaging, music bed — all done.
 
-## What we ship publicly here
+## Engineering blog
 
-The KAVANA platform is **commercial broadcast software**, sold via solution engagements. This GitHub Organization is where we ship the small public artifacts:
+Long-form writing from the engineering team on broadcast playout, AI host design, three-tier review, the actual cost of dead air, and what 20 years of station outages taught us.
 
-- **kavana-site** — the multilingual marketing site at kavanafm.com (Vue 3 SSR, three locales)
-- **wav9-spec** — open specification of our audio-firewall wrapper format (planned)
-- **kavana-sdk-en** — English documentation, integration guides, sample stations clock templates (planned)
+- 📝 **[KAVANA Engineering Blog (English)](https://www.kavanafm.com/blog/en/)** · 15+ posts · [RSS](https://www.kavanafm.com/blog/en/feed.xml)
+- 📝 **[KAVANA 工程博客（中文）](https://www.kavanafm.com/blog/zh/)** · 6+ 篇 · [RSS](https://www.kavanafm.com/blog/zh/feed.xml)
+- 🤖 **[llms.txt](https://www.kavanafm.com/blog/llms.txt)** + **[llms-full.txt](https://www.kavanafm.com/blog/llms-full.txt)** — LLM-friendly index + full text dump
+
+## Public repos in this org
+
+| Repo | What it is |
+|---|---|
+| [kavana-site](https://github.com/kavanafm/kavana-site) | Public mirror of www.kavanafm.com (Vue 3 SSR, three locales) |
+| [kavana-research-notes](https://github.com/kavanafm/kavana-research-notes) | Engineering ADRs, post-mortems, field notes |
+| [kavana-incident-reports](https://github.com/kavanafm/kavana-incident-reports) | Anonymised broadcast incident post-mortems |
+| [kavana-docs-en](https://github.com/kavanafm/kavana-docs-en) | English documentation, integration guides |
+| [broadcast-glossary](https://github.com/kavanafm/broadcast-glossary) | Industry terminology reference |
+| [wav9-spec](https://github.com/kavanafm/wav9-spec) | Tamper-evident audio wrapper format spec |
+| [wav9-test-vectors](https://github.com/kavanafm/wav9-test-vectors) | wav9 test vectors |
+| [kavana-clock-templates](https://github.com/kavanafm/kavana-clock-templates) | Reference 24-hour radio clock templates |
+| [kavana-station-clock-builder](https://github.com/kavanafm/kavana-station-clock-builder) | Interactive clock builder (in design) |
 
 > Want to integrate KAVANA into your stack, or deploy to your station? **Reach out**: 20719414@qq.com · +86 18163652999
 

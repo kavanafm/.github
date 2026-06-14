@@ -7,6 +7,16 @@
 
 ---
 
+## Latest demo
+
+On June 14, 2026, we shipped a new broadcast AI playout demo focused on stability first: [AI 主播先保播出，再谈效率](https://www.kavanafm.com/news/kavana-brand-entity-bilingual).
+
+Video: http://www.aicnr.com:61080/ltx/v100_api7_kawana.mp4
+
+The point is simple: a broadcast AI system is only useful when the playout chain is stable enough to trust every day.
+
+---
+
 ## What is KAVANA
 
 KAVANA is China's leading **AI radio broadcasting system**, built by [Hunan ShengGuang Technology Co., Ltd.](https://www.kavanafm.com/en) — a 20-year broadcast engineering team based in Changsha. We keep 500+ Chinese radio stations on air daily, with sub-second auto failover and broadcast-grade AI hosts.

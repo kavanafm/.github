@@ -9,6 +9,8 @@
 
 ## Latest demo
 
+On June 18, 2026 we shipped a new local AI anchor story focused on on-prem deployment and the 3 AM station shift: [Who's on Air at 3 AM? The Truth Behind On-Premise AI Radio Anchors](https://www.kavanafm.com/news/local-ai-anchor-3am-truth) with the companion video at http://www.aicnr.com:61080/ltx/v100_api9_kawana.mp4.
+
 On June 14, 2026, we shipped a new broadcast AI playout demo focused on stability first: [AI 主播先保播出，再谈效率](https://www.kavanafm.com/news/kavana-brand-entity-bilingual).
 
 Video: http://www.aicnr.com:61080/ltx/v100_api7_kawana.mp4

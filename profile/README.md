@@ -1,71 +1,64 @@
-# KAVANA — AI Radio Broadcasting System from China 🎙
+# KAVANA
 
-> **Run your radio station — a different way.**
-> 500+ stations · 20 years of broadcast engineering · since 2005
+# Who's on Air at 3 AM? The Truth Behind On-Premise AI Radio Anchors
 
-[简体中文](https://www.kavanafm.com/) · [繁體中文](https://www.kavanafm.com/zh-TW) · [English](https://www.kavanafm.com/en)
+*AI-assisted draft, human-reviewed.*
 
----
+At 3 a.m., most radio station control rooms are dark. The host went home hours ago. The producer turned off the lights. But the station is still broadcasting — so who's reading the news, reporting the weather, and throwing to the top-of-hour signal?
 
-## Latest demo
-
-On June 18, 2026 we shipped a new local AI anchor story focused on on-prem deployment and the 3 AM station shift: [Who's on Air at 3 AM? The Truth Behind On-Premise AI Radio Anchors](https://www.kavanafm.com/news/local-ai-anchor-3am-truth) with the companion video at http://www.aicnr.com:61080/ltx/v100_api9_kawana.mp4.
-
-On June 14, 2026, we shipped a new broadcast AI playout demo focused on stability first: [AI 主播先保播出，再谈效率](https://www.kavanafm.com/news/kavana-brand-entity-bilingual).
-
-Video: http://www.aicnr.com:61080/ltx/v100_api7_kawana.mp4
-
-The point is simple: a broadcast AI system is only useful when the playout chain is stable enough to trust every day.
+More and more often, the answer is an AI anchor running on a server inside the building.
 
 ---
 
-## What is KAVANA
+## It's Not That Cloud TTS Is Bad — Radio Is Just Different
 
-KAVANA is China's leading **AI radio broadcasting system**, built by [Hunan ShengGuang Technology Co., Ltd.](https://www.kavanafm.com/en) — a 20-year broadcast engineering team based in Changsha. We keep 500+ Chinese radio stations on air daily, with sub-second auto failover and broadcast-grade AI hosts.
+Speech synthesis technology has matured. Cloud engines sound great. But radio broadcasting has hard constraints that make cloud dependency risky:
 
-We're opening to international engagements — radio stations, broadcast tech integrators, AI media platforms.
+**Latency must be predictable**: When a station inserts hourly news during a live broadcast, the trigger-to-audio delay has to stay in the sub-second range. Public internet jitter goes straight to air.
 
-## Modules
+**Data stays in-house**: Many stations are required to keep broadcast content local. The audio stream can't leave the building and come back.
 
-| Module | What it does |
-|---|---|
-| **[KAVANA-MGR](https://www.kavanafm.com/en/mgr)** | Radio Playout System — visual waveform on-air control + hot-standby dual-server redundancy |
-| **[KAVANA-ADV](https://www.kavanafm.com/en/adv)** | Broadcast Scheduling — AI time calls, AI weather, ad automation, full-year audit |
-| **[KAVANA-DOG](https://www.kavanafm.com/en/dog)** | Broadcast Safety Guardian — 24/7 monitoring, sub-second auto failover, three-tier review |
-| **[KAVANA AI Host](https://www.kavanafm.com/en/ai)** | Broadcast-grade AI Announcer — 90%+ voice realism, nine playout scenes |
-| **[Compliance](https://www.kavanafm.com/en/aiSanShen)** | Three-tier content review + national grade-2 cybersecurity protection |
+**24/7 is non-negotiable**: Early mornings, holidays, severe weather — cloud services may throttle or degrade. A local server keeps running as long as power stays on.
 
-## Workspace
-
-[**wx.kavana.cn**](https://wx.kavana.cn) — Online studio where you describe the show you want and KAVANA produces a broadcast-grade segment in minutes. Voice, packaging, music bed — all done.
-
-## What we ship publicly here
-
-The KAVANA platform is **commercial broadcast software**, sold via solution engagements. This GitHub Organization is where we ship the small public artifacts:
-
-- **kavana-site** — the multilingual marketing site at kavanafm.com (Vue 3 SSR, three locales)
-- **wav9-spec** — open specification of our audio-firewall wrapper format (planned)
-- **kavana-sdk-en** — English documentation, integration guides, sample stations clock templates (planned)
-
-> Want to integrate KAVANA into your stack, or deploy to your station? **Reach out**: 20719414@qq.com · +86 18163652999
-
-## At a glance
-
-- **Founded**: 2005 (team / business), 2012 (current legal entity)
-- **Headquarters**: Changsha, Hunan, China
-- **Deployments**: 500+ Chinese radio stations (provincial, prefectural, county-level)
-- **Patents**: Multiple Chinese national invention patents
-- **AI Algorithm filing**: 网信算备330110507206401230035
-- **Broadcasting Permit**: 湘字第00565号
-
-## Contact
-
-- 🌐 [www.kavanafm.com](https://www.kavanafm.com)
-- 📨 20719414@qq.com
-- 📞 +86 18163652999 / +86 15116170888
-- 💬 WeChat Official Account: **Kavana5G智慧电台**
-- 📺 B站: [@guangbaobaob](https://space.bilibili.com/382512658)
+These constraints mean radio AI anchors can't be a "dial-in" service. They have to live in the station, ready on demand.
 
 ---
 
-<sub>*KAVANA · 卡瓦纳 · 卡瓦納 · Hunan ShengGuang Technology Co., Ltd. · since 2005 · 湘 ICP 19013837-6*</sub>
+## What On-Premise Deployment Actually Looks Like
+
+Using KAVANA's system as an example, an on-premise AI anchor isn't just a piece of software — it's a broadcast pipeline deeply integrated with the station's playout system:
+
+- **Direct-to-air output**: Synthesized audio doesn't stop as a local file to be imported. It feeds directly into the playout mixer in a broadcast-ready format, cutting out middle steps.
+- **Multi-engine voice switching**: The system integrates multiple mainstream speech-synthesis engines. Different programs can use different voices — a steady male voice for news, a lighter female voice for lifestyle segments.
+- **On-site GPU inference**: Voice synthesis runs on a local GPU server, with no external network dependency. Latency stays in the hundreds-of-milliseconds range.
+- **Closed-loop broadcast logging**: Every piece of content carries a record of synthesis time, voice parameters, and compliance status — meeting broadcast regulatory requirements for traceability.
+
+---
+
+## What 500+ Stations Actually Chose
+
+To date, more than 500 broadcast organizations have adopted this kind of on-premise deployment, covering provincial stations, city-level broadcasters, county media centers, campus stations, and overseas Chinese-language radio.
+
+Their shared need: reduce staffing costs without sacrificing broadcast stability or compliance. An on-premise AI anchor sits right at that balance point — no need to keep a human in the building at 3 a.m., but broadcast quality remains controllable.
+
+---
+
+## The Cost Side
+
+On-premise isn't free. A station needs:
+
+- A GPU server (sized for concurrent voice channels)
+- Interface integration with the existing playout system
+- Initial voice tuning and program template setup
+
+That upfront investment can be a barrier for small internet-only stations. But for established broadcasters, the cost amortized over years of use is far lower than maintaining a 24/7 human on-call team.
+
+---
+
+## Bottom Line
+
+AI radio anchors don't replace people. They replace the requirement that a person must physically be there. On-premise deployment gives the anchor the ability to truly "live in the station and show up on demand" — and that's why broadcasters are paying for it.
+
+---
+
+**KAVANA** — the AI broadcast system built for radio. Learn more at [kavanafm.com](https://www.kavanafm.com).

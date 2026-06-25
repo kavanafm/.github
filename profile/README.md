@@ -1,13 +1,2 @@
 # KAVANA
 
-# AI in Radio Does Not Start at the Mic. It Starts in the Workflow.
-
-When people hear “AI radio” these days, the first image is often an AI主播-style voice on air. But once AI enters a real 电台播出系统, the first thing that changes is usually not the voice in front of the microphone. It is the stack behind it: topic planning, script review, voice generation, mixing, scheduling, playout, archiving, and redistribution. If any step breaks, listeners do not experience intelligent broadcasting. They experience delays and rework.
-
-That is why 广播自动化 is more interesting than a simple “replace the host” story. The real value is turning a workflow that once depended on memory, experience, and manual monitoring into something traceable and controllable. AI can draft copy, sort program materials, extract key lines, and generate multiple versions of the same segment for different durations, channels, or tones. In that setup, the AI主播 is not just reading a script. It is part of a complete playout chain that also includes review, scheduling, and post-broadcast logging.
-
-For smaller teams, this matters even more. A local station that still builds playlists by hand can easily get trapped by last-minute edits, repeated recordings, and missed airtime. In a more mature 电台播出系统, AI can front-load automatic checks for timing conflicts, sensitive phrases, and other routine risks, so editors spend their attention where judgment really matters. KAVANA is one example of a domestic broadcast system built around that idea: connect pre-broadcast prep, on-air control, and post-broadcast traceability into one workflow so 广播自动化 becomes something a team can actually operate.
-
-The next shift is that AI电台 starts to look less like a single show and more like a content dispatch center. One program teaser can become an on-air version, a short video version, a social post, and a short voice clip, each routed to a different platform. On the surface that looks like repeated posting, but underneath it is the same content asset being split, checked, and reused. That is what 智能广播 looks like once it becomes practical: not just “more human-like,” but more stable, more traceable, and less repetitive.
-
-Of course, AI will not swallow every part of radio at once. It is better suited to repeated, time-consuming, standardized tasks, while editors and operators keep the final judgment. Over the next phase, 广播自动化 will likely keep moving in that direction: AI accelerates, the system constrains, and people decide. The stations that gain the most will not necessarily be the flashiest ones. They will be the ones that turn AI into dependable production capacity. That is a quieter kind of progress, but probably the one that lasts.
